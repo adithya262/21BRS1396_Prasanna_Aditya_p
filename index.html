@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-Based Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Turn-Based Game</h1>
+        <div id="current-turn">Current Turn: Player A</div>
+        
+      
+        <div id="move-guide">
+            <h2>Character Movement Guide</h2>
+            <p><strong>Pawns:</strong> Can move one step in any direction.</p>
+            <p><strong>Hero1:</strong> Can move two steps in horizontal or vertical directions, clearing any piece in the path.</p>
+            <p><strong>Hero2:</strong> Can move two steps diagonally, clearing any piece in the path.</p>
+        </div>
+        
+        <div id="move-options"></div>
+        <div id="game-board"></div>
+        <ul id="history-list"></ul>
+        
+        <div id="winner-announcement"></div>
+        
+        <div id="game-over">
+            Game Over! <button onclick="startNewGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
